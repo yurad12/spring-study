@@ -1,6 +1,7 @@
 package com.yujeong.firstspring;
 
 import com.yujeong.firstspring.repository.JdbcMemberRepository;
+import com.yujeong.firstspring.repository.JdbcTemplateMemberRepository;
 import com.yujeong.firstspring.repository.MemberRepository;
 import com.yujeong.firstspring.repository.MemoryMemberRepository;
 import com.yujeong.firstspring.service.MemberService;
@@ -28,6 +29,7 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository() {
 //        return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+//        return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 }
