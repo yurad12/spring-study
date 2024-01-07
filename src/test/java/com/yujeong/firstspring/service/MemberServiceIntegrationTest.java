@@ -34,7 +34,7 @@ class MemberServiceIntegrationTest {
         Member findMember = memberService.findOne(saveId).get();
         assertThat(member.getName()).isEqualTo(findMember.getName());
     }
-
+    
     @Test
     public void exception_duplicated_member(){
         //given
