@@ -1,9 +1,6 @@
 package com.yujeong.basic;
 
-import com.yujeong.basic.discount.DiscountPolicy;
-import com.yujeong.basic.discount.FixDiscountPolicy;
-import com.yujeong.basic.discount.OrderService;
-import com.yujeong.basic.discount.OrderServiceImpl;
+import com.yujeong.basic.discount.*;
 import com.yujeong.basic.member.MemberService;
 import com.yujeong.basic.member.MemberServiceImpl;
 import com.yujeong.basic.member.MemoryMemberRepository;
@@ -26,6 +23,7 @@ public class AppConfig {
     }
 
     public DiscountPolicy discountPolicy() {
-        return new FixDiscountPolicy();
+//        return new FixDiscountPolicy();
+        return new RateDiscountPolicy();
     }
 }
