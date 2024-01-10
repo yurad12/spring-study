@@ -1,6 +1,6 @@
 package com.yujeong.basic;
 
-import com.yujeong.basic.discount.OrderService;
+import com.yujeong.basic.order.OrderService;
 import com.yujeong.basic.member.Grade;
 import com.yujeong.basic.member.Member;
 import com.yujeong.basic.member.MemberService;
