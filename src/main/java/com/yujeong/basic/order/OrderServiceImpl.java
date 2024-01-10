@@ -1,11 +1,10 @@
-package com.yujeong.basic.discount;
+package com.yujeong.basic.order;
 
+import com.yujeong.basic.discount.DiscountPolicy;
 import com.yujeong.basic.member.Member;
 import com.yujeong.basic.member.MemberRepository;
-import com.yujeong.basic.member.MemoryMemberRepository;
-import com.yujeong.basic.order.Order;
 
-public class OrderServiceImpl implements OrderService{
+public class OrderServiceImpl implements OrderService {
 
     private final MemberRepository memberRepository;
     private  final DiscountPolicy discountPolicy;

@@ -1,4 +1,4 @@
-package com.yujeong.basic.discount;
+package com.yujeong.basic.order;
 
 import com.yujeong.basic.order.Order;
 

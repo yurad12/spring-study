@@ -4,6 +4,8 @@ import com.yujeong.basic.discount.*;
 import com.yujeong.basic.member.MemberService;
 import com.yujeong.basic.member.MemberServiceImpl;
 import com.yujeong.basic.member.MemoryMemberRepository;
+import com.yujeong.basic.order.OrderService;
+import com.yujeong.basic.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
