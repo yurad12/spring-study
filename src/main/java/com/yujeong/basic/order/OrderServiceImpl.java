@@ -4,7 +4,6 @@ import com.yujeong.basic.discount.DiscountPolicy;
 import com.yujeong.basic.member.Member;
 import com.yujeong.basic.member.MemberRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
