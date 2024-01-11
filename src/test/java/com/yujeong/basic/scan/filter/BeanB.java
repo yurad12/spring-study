@@ -1,2 +1,5 @@
-package com.yujeong.basic.scan.filter;public class beanB {
+package com.yujeong.basic.scan.filter;
+
+@MyExcludeComponent
+public class BeanB {
 }
