@@ -1,4 +1,4 @@
-package com.yujeong.servlet.web.servlet.frontcontroller.v3.controller;
+package com.yujeong.servlet.web.servlet.frontcontroller.v4.controller;
 
 import com.yujeong.servlet.domain.member.Member;
 import com.yujeong.servlet.domain.member.MemberRepository;
@@ -8,7 +8,8 @@ import java.util.Map;
 
 public class MemberSaveControllerV4 implements ControllerV4 {
 
-    private MemberRepository memberRepository = MemberRepository.getInstance()
+    private final MemberRepository memberRepository = MemberRepository.getInstance();
+
     @Override
     public String process(Map<String, String> paramMap, Map<String, Object> model) {
         String username = paramMap.get("username");
