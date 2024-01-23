@@ -50,4 +50,14 @@ public class RequestParamController {
         return "ok";
     }
 
+    @ResponseBody
+    @RequestMapping("/request-param-required")
+    public String requestParamRequired(
+            @RequestParam(required = true) String username,
+            @RequestParam(required = false) Integer age) {
+
+        log.info("username={}, age={}", username, age);
+        return "ok";
+    }
+
 }
