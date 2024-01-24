@@ -5,6 +5,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.RequestEntity;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -43,5 +46,14 @@ public class RequestBodyStringController {
         log.info("messageBody={}", messageBody);
 
         return new HttpEntity<>("ok");
+    }
+
+    @PostMapping("/request-body-string-v4")
+    public HttpEntity<String> requestBodyStringV4(RequestEntity<String> httpEntity) throws IOException {
+
+        String messageBody = httpEntity.getBody();
+        log.info("messageBody={}", messageBody);
+
+        return new ResponseEntity<>("ok", HttpStatus.CREATED);
     }
 }
